@@ -193,7 +193,7 @@
   const ipt = document.querySelector('#search-input')
   const btn = document.querySelector('#search-btn')
   const layer = document.querySelector('#search-layer')
-  const posts = JSON.parse(`[{"title":"Hello World","path":"2023/07/03/hello-world/"}]`)
+  const posts = JSON.parse(`[{"title":"Hello World","path":"2023/07/03/hello-world/"},{"title":"Resume","path":"2023/07/04/Resume/"}]`)
   ipt.addEventListener('keyup', e => {
     if (e.key === 'Enter') {
       handleSearch()
@@ -237,10 +237,10 @@
     <div class="main-left--info">
       <img src="/imgs/avatar.jpg"" class="main-left--avatar" />
       <div class="main-left--intro">
-        <p class="main-left--name">jswe</p>
+        <p class="main-left--name">魏建帅</p>
         <div class="main-left--tags">
-          <span class="main-left--tag">汉族</span>
           <span class="main-left--tag">男</span>
+          <span class="main-left--tag">汉族</span>
         </div>
       </div>
     </div>
@@ -289,16 +289,9 @@
         </li>
       
         <li>
-          <a href="/log">
-            <span class="header-menu--span">个人日志</span>
+          <a href="/2023/07/04/Resume/">
+            <span class="header-menu--span">个人简历</span>
             <i class="header-menu--icon iconfont icon-rizhi"></i>
-          </a>
-        </li>
-      
-        <li>
-          <a href="/link">
-            <span class="header-menu--span">友情链接</span>
-            <i class="header-menu--icon iconfont icon-youqinglianjie"></i>
           </a>
         </li>
       
@@ -327,11 +320,11 @@
       </h5>
       <p class="main-left--subtitle">
         <span>文章数目：</span>
-        <span>1 篇</span>
+        <span>2 篇</span>
       </p>
       <p class="main-left--subtitle">
         <span>最近动态：</span>
-        <span>昨天</span>
+        <span>今天</span>
       </p>
       <p class="main-left--subtitle">
         <span>上线时间：</span>
@@ -357,7 +350,7 @@
           <img class="index-article--cover" data-cover="imgs/default-cover.webp" alt="">
         </div>
         <div class="index-article--content">
-          <a href="/2023/07/03/hello-world/">Hello World </a>
+          <a href="/2023/07/04/Resume/">Resume </a>
           <div>
             
             
@@ -369,12 +362,27 @@
   </div>
   <div class="index-center">
     
+      <div class="index-article">
+        <!-- <img class="index-article--cover" data-cover="" src="/imgs/default-cover.webp" alt=""> -->
+        <div class="index-article--box">
+          <img class="index-article--cover" data-cover="imgs/default-cover.webp" alt="">
+        </div>
+        <div class="index-article--content">
+          <a href="/2023/07/03/hello-world/">Hello World </a>
+          <div>
+            
+            
+          </div>
+          <div class="bg"></div>
+        </div>
+      </div>
+    
   </div>
   <div class="index-right">
     <div class="index-right-wrapper">
       
       
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/07/">2023年07月</a><span class="archive-list-count">1</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/07/">2023年07月</a><span class="archive-list-count">2</span></li></ul>
     </div>
   </div>
 </div>
